@@ -4,7 +4,8 @@ jobs: #task your performing
   first-job: #task name
     runs-on: ubuntu-latest #runner where we are running flow on 
     steps: #step we are performing in job 
-      -name: printing greeting #name of steps 
-      run: echo "Hie my First workflow"
+      - name: printing greeting #name of steps 
+        run: echo "Hie my First workflow"
+      
       - name: printing bye
-      run: echo "good bye..!"
+        run: echo "good bye..!"
