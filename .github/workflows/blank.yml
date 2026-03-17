@@ -1,0 +1,10 @@
+name: first workflow # workflow run-name
+on: workflow_dispatch # when the flow will trigger (workflow_dispatch - allow manually trigger flow)
+jobs:
+  first-job:
+    runs-on: ubuntu-latest
+    steps:
+      -name: printing greeting
+      run: echo "Hie my First workflow"
+      - name: printing bye
+      run: echo "good bye..!"
